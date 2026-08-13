@@ -1,2 +1,2 @@
-# Java-script
-Estudos sobre Java Script
+# Técnicas de Programação Java e Type Script 
+
