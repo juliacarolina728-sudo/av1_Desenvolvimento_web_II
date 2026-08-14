@@ -9,7 +9,12 @@ body {
 }
 
 .header-blue {
-  background: linear-gradient(135deg, #6c60f7 0%, #4d3ef0 50%, #16165c 100%);
+  background: linear-gradient( #6c60f7 0%, #4d3ef0 50%, #16165c 100%);
+  padding: 3% 10% 7% 10%;
+}
+
+.header-yellow {
+  background: linear-gradient(#77661c 0%, #c27706 50%, #d1b61a 100%);
   padding: 3% 10% 7% 10%;
 }
 
