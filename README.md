@@ -1,5 +1,5 @@
 # AV 1 Desenvolvimento web II
-# Atividade Avaliativa Individual 01
+## Atividade Avaliativa Individual 01
 
 Lista de Exercícios (HTML + CSS + JavaScript) 
 
