@@ -3,7 +3,7 @@
 
 Lista de Exercícios (HTML + CSS + JavaScript) 
 
-
+------------------------------------------------------------------------------------
 
 Os exercícios devem ser responsivo, bem estruturado, usando HTML, CSS e JavaScript, aplicando estrutura de decisão, comandos de repetição e funções. 
 
@@ -11,7 +11,7 @@ Os exercícios devem ser responsivo, bem estruturado, usando HTML, CSS e JavaScr
 
 Requisitos obrigatórios de JavaScript  
 
-
+----------------------------------------------------------------------------------
 
 1) Estrutura de decisão (if / else ou switch) 
 
@@ -19,6 +19,8 @@ Requisitos obrigatórios de JavaScript
 
 3) Funções (function ) 
 
+
+-----------------------------------------------------------------------------------------
  
 
 Requisitos de layout (CSS) 
