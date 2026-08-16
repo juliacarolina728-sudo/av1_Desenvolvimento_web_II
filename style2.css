@@ -31,6 +31,14 @@ body {
   font-weight: 500;
 }
 
+.main-image {
+  display: block;
+  max-width: 50%;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
  
 
 .tabs {
