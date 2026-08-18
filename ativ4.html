@@ -1,4 +1,3 @@
-
  <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -31,11 +30,31 @@
   <img class="main-image" src="imagem/b865f21769ebc8184bb6c3aaee8fa7c0.jpg" alt="Hotel com estrelas">
 
   <div class="pedido-trigger-card" id="btnAbrirModal">
-    <div class="card-top"></div>
-    <h3 class="card-title">Faça Sua Reserva</h3>
-    <p class="card-desc">Clique para reservar um de nossos quartos.</p>
+    <div class="card-top">
+      <span class="card-action-icon"></span>
+    </div>
+    <h3 class="card-title">Novo Pedido</h3>
+    <p class="card-desc">Clique para cadastrar as informações de um novo pedido de entrega.</p>
   </div>
 </div>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" type="button">&times;</button>
+    <!-- vou adicionar o resto aqui posteriormente -->
+     <h2 class="modal-title">Novo Pedido</h2>
+     <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3> 
+     <label for="nome">teste:</label>
+    <input type="text" id="nome" name="nome" required>   
+    <label for="endereco">teste:</label>
+    <input type="text" id="endereco" name="endereco" required>  
+
+    <form class="modal-form" id="pedidoForm">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box">
     <button class="modal-close" id="modalClose" type="button">&times;</button>
