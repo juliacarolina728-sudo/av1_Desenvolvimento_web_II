@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +34,30 @@
     <h1 style="text-align: center; margin-top: 2%; color: #0b0edf; padding: 1%;">Atividade 5.</h1>
     <br><br>
     <div class="placeholder-bar"></div>
-    <img class="main-image" src="" alt="Mecânico trabalhando no motor do carro">
-
-</body>
-</html>
+    <img class="main-image" src="" alt="nova imagem">
+    <div class="pedido-trigger-card" id="btnAbrirModal">
+      <div class="card-top">
+        <span class="card-action-icon"></span>
+      </div>
+      <h3 class="card-title">Novo Pedido</h3>
+      <p class="card-desc">Clique para cadastrar as informações de um novo pedido de entrega.</p>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" type="button">&times;</button>
+      <!-- vou adicionar o resto aqui posteriormente -->
+       <h2 class="modal-title">Novo Pedido</h2>
+       <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3> 
+       <label for="nome">teste:</label>
+      <input type="text" id="nome" name="nome" required>   
+      <label for="endereco">teste:</label>
+      <input type="text" id="endereco" name="endereco" required>  
+  
+      <form class="modal-form" id="pedidoForm">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
