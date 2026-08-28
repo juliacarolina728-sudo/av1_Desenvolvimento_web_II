@@ -3,23 +3,16 @@
   margin: 0;
   padding: 0;
 }
-body {
-<<<<<<< HEAD
-=======
-        
->>>>>>> e89a9a944f03838efd9e9db00ba70aba35fd4bd4
-        font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+body {    
+       font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
         background-color: #eb6f14 }
 
 .header-maroon {
   background: #6b0f33;
-<<<<<<< HEAD
-   padding: 4.7% 1.6% 7%;   
-=======
+  padding: 4.7% 1.6% 7%;   
   padding: 4.7% 1.6% 7%;
   text-align: center;
   position: relative; 
->>>>>>> e89a9a944f03838efd9e9db00ba70aba35fd4bd4
   border-radius: 0 0 50% 50% / 0 0 70px 70px;
 }
  
@@ -29,9 +22,6 @@ body {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
- .main-image {
-=======
 .content-card {
   background: #FFF9A6;
   max-width: 75%;
@@ -43,7 +33,6 @@ body {
 }
 
 .main-image {
->>>>>>> e89a9a944f03838efd9e9db00ba70aba35fd4bd4
   display: block;
   max-width: 55%;
   width: 100%;
