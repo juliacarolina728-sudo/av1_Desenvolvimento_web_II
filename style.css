@@ -70,9 +70,7 @@ body {
     max-width: 90%;
     padding: 5%;
   }
-  .main-image {
-    max-width: 90%;
-  }
+  
 }
 
 .pedido-trigger-card {
@@ -141,4 +139,118 @@ body {
 
 .modal-overlay.active {
   display: flex;
+}
+
+.modal-box {
+  position: relative;
+  display: flex;
+  width: 720px;
+  max-width: 92vw;
+  min-height: 420px;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+  cursor: pointer;
+  z-index: 5;
+}
+.modal-decor {
+  position: relative;
+  width: 42%;
+  background: linear-gradient(160deg, #4b3ff2 0%, #7b2ff7 55%, #2d0b8c 100%);
+  overflow: hidden;
+}
+
+.modal-decor::before {
+  content: "";
+  position: absolute;
+  width: 220%;
+  height: 60%;
+  background: rgba(255,255,255,0.18);
+  top: 10%;
+  left: -60%;
+  transform: rotate(-18deg);
+  border-radius: 50%;
+}
+
+.modal-decor::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  bottom: -40px;
+  left: 20px;
+}
+
+.modal-form-panel {
+  flex: 1;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.modal-subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.modal-form input {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f0f5;
+  font-size: 0.9rem;
+}
+
+.modal-form input:focus {
+  outline: 2px solid #4b3ff2;
+}
+
+.modal-submit {
+  margin-top: 26px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4b3ff2, #7b2ff7);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.modal-submit:hover {
+  opacity: 0.9;
 }

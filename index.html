@@ -38,20 +38,45 @@
     <p class="card-desc">Clique para cadastrar as informações de um novo pedido de entrega.</p>
   </div>
 </div>
+
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box">
     <button class="modal-close" id="modalClose" type="button">&times;</button>
-    <!-- vou adicionar o resto aqui posteriormente -->
-     <h2 class="modal-title">Novo Pedido</h2>
-     <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3> 
-     <label for="nome">teste:</label>
-    <input type="text" id="nome" name="nome" required>   
-    <label for="endereco">teste:</label>
-    <input type="text" id="endereco" name="endereco" required>  
 
-    <form class="modal-form" id="pedidoForm">
-  </div>
-</div>
+    <div class="modal-decor"></div>
+
+    <div class="modal-form-panel">
+      <h2 class="modal-title">Novo Pedido</h2>
+      <p class="modal-subtitle">Preencha as informações do pedido de entrega</p>
+
+      <form class="modal-form" id="pedidoForm">
+  <label for="codigo">Código do pedido</label>
+  <input type="text" id="codigo" name="codigo" required>
+  
+  <label for="precoCombustivel">Preço do litro de combustível (R$)</label>
+  <input type="text" id="precoCombustivel" step="0.01" min="0">
+  
+  <label for="regiao">Região</label>
+  <select id="regiao" name="regiao" required>
+    <option value="">Selecione...</option>
+    <option value="1">Sudeste (R$ 1,20/peça)</option>
+    <option value="2">Sul (R$ 1,30/peça)</option>
+    <option value="3">Centro-Oeste (R$ 1,50/peça)</option>
+  </select>
+
+  <label for="distancia">Distância (km)</label>
+  <input type="number" id="distancia" name="distancia" min="0" required>
+
+  <label for="quantidade">Quantidade de peças</label>
+  <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+  <label for="rastreamento">
+    <input type="checkbox" id="rastreamento" name="rastreamento">
+    Deseja rastreamento? (+ R$ 200)
+  </label>
+
+  <button type="submit" class="modal-submit">CADASTRAR</button>
+</form>
 
 <script src="script.js"></script>
 </body>

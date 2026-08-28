@@ -1,5 +1,6 @@
 
- <!DOCTYPE html>
+ 
+  <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@
 </head>
 <body>
 <div class="top-bar"></div>
+
 <div class="header-maroon">
     <nav class="tabs">
       <a href="index.html" class="tab">Atividade 1</a>
@@ -24,22 +26,44 @@
     </nav>
     
   </div>
-  <div>
-    <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #911b1b; padding: 2%; font-size: 60px">Rede Hotelaria</h1><br><br>
- </div>
+  <div class="content-card">
+  <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #911b1b; padding: 2%; font-size: 60px">Gere seu holerite</h1><br><br>
   <div class="placeholder-bar"></div>
-  <img class="main-image" src="imagem/b865f21769ebc8184bb6c3aaee8fa7c0.jpg" alt="Hotel com estrelas">
-
+  <img class="main-image" src="imagem/b865f21769ebc8184bb6c3aaee8fa7c0.jpg" alt="Holerite">
+  
   <div class="pedido-trigger-card" id="btnAbrirModal">
-    <div class="card-top"></div>
-    <h3 class="card-title">Faça Sua Reserva</h3>
-    <p class="card-desc">Clique para reservar um de nossos quartos.</p>
+    <div class="card-top">
+      <span class="card-action-icon"></span>
+    </div>
+    <h3 class="card-title">Faça sua reserva</h3>
+    <p class="card-desc">Clique para fazer sua reserva.</p>
   </div>
 </div>
+
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box">
     <button class="modal-close" id="modalClose" type="button">&times;</button>
-    <!-- vou adicionar o resto aqui posteriormente -->
- 
+
+    <div class="modal-decor"></div>
+
+    <div class="modal-form-panel">
+      <h2 class="modal-title">Novo Pedido</h2>
+      <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3>
+
+      <form class="modal-form" id="pedidoForm">
+        <label for="nome">teste:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="endereco">teste:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <button type="submit" class="modal-submit">GERAR</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

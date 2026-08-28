@@ -4,41 +4,32 @@
   padding: 0;
 }
 body {
-        margin: 0;
-        padding: 0;
         font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
         background-color: #eb6f14 }
 
 .header-maroon {
   background: #6b0f33;
-  padding: 60px 20px 90px;
-  text-align: center;
-  position: relative; 
+   padding: 4.7% 1.6% 7%;   
   border-radius: 0 0 50% 50% / 0 0 70px 70px;
 }
  
-.header-maroon .dash {
-  width: 40px;
-  height: 4px;
-  background: #eb6f14;
-  margin: 0 auto 16px;
-  border-radius: 2px;
-}
- 
-.header-maroon h1 {
+.header-maroon  {
   color: #eb6f14;
   font-size: clamp(22px, 4vw, 34px);
   font-weight: 500;
 }
 
-.main-image {
+ .main-image {
   display: block;
-  max-width: 50%;
-  width: 50%;
+  max-width: 55%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+ .main-image {
+    max-width: 90%;
+  }
  
 
 .tabs {
@@ -50,14 +41,15 @@ body {
 
 .tab {
   font-family: 'Orbitron', sans-serif;
-  color: #fdfdfc ;
+  color: #d9d8e7;
   font-size: 17px;
   font-weight: 600;
-  text-decoration: none;
   cursor: pointer;
-  padding: 5px 20px;    
+  text-decoration: none;
+   padding: 5px 20px;     
   border-radius: 999px;
   transition: background 0.2s;
+  ;
 }
 
 .tab:hover {
@@ -73,12 +65,12 @@ body {
   max-width: 400px;
   margin: 40px auto;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(193, 196, 14, 0.205);
+  box-shadow: 0 4px 14px rgba(76, 62, 240, 0.08);
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 .pedido-trigger-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(110, 68, 5, 0.26);
+  box-shadow: 0 10px 24px rgba(76, 62, 240, 0.15);
   border-color: #ca7900;
 }
 
@@ -112,6 +104,16 @@ body {
   margin-bottom: 8px;
 }
 
+.content-card {
+  background: #f7f8a5ab;
+  max-width: 75%;
+  margin: -5% auto 0 auto;
+  border-radius: 1.3%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 2.7%;
+  position: relative;
+}
+
 .card-desc {
   font-size: 13px;
   color: #c4bfbf;
@@ -131,4 +133,133 @@ body {
 
 .modal-overlay.active {
   display: flex;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 10, 40, 0.55);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  position: relative;
+  display: flex;
+  width: 720px;
+  max-width: 92vw;
+  min-height: 420px;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.modal-decor {
+  position: relative;
+  width: 42%;
+  background: linear-gradient(160deg, #911b1b 0%, #b23a3a 55%, #4a0d0d 100%);
+  overflow: hidden;
+}
+
+.modal-decor::before {
+  content: "";
+  position: absolute;
+  width: 220%;
+  height: 60%;
+  background: rgba(255,255,255,0.18);
+  top: 10%;
+  left: -60%;
+  transform: rotate(-18deg);
+  border-radius: 50%;
+}
+
+.modal-decor::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  bottom: -40px;
+  left: 20px;
+}
+
+.modal-form-panel {
+  flex: 1;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.modal-subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.modal-form input {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f0f5;
+  font-size: 0.9rem;
+}
+
+.modal-form input:focus {
+  outline: 2px solid #911b1b;
+}
+
+.modal-submit {
+  margin-top: 26px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #911b1b, #b23a3a);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.modal-submit:hover {
+  opacity: 0.9;
 }
