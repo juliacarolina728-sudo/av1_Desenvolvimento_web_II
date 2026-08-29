@@ -29,7 +29,7 @@
   <div class="placeholder-bar"></div>
   <img class="main-image" src="imagem/Gemini_Generated_Image_yl6ihiyl6ihiyl6i.jpg" alt="Holerite">
 
-  <div class="pedido-trigger-card" id="btnAbrirModal">
+  <div class="holerite-trigger-card" id="btnAbrirModal">
     <div class="card-top">
       <span class="card-action-icon"></span>
     </div>
@@ -45,15 +45,35 @@
     <div class="modal-decor"></div>
 
     <div class="modal-form-panel">
-      <h2 class="modal-title">Novo Pedido</h2>
-      <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3>
+      <h2 class="modal-title">Gere seu holerite</h2>
+      <h3 class="modal-subtitle">Preencha as informações do holerite</h3>
 
-      <form class="modal-form" id="pedidoForm">
-        <label for="nome">teste:</label>
-        <input type="text" id="nome" name="nome" required>
+      <form class="modal-form" id="holeriteForm">
+        <label for="codigo">Código do Funcionario:</label>
+        <input type="text" id="codigo" name="codigo" required>
 
-        <label for="endereco">teste:</label>
-        <input type="text" id="endereco" name="endereco" required>
+        <label for="horasTrabalhadas">Horas Trabalhadas:</label>
+        <input type="number" id="horasTrabalhadas" name="horasTrabalhadas" required>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Selecione...</option>
+          <option value="F">F</option>
+          <option value="G">G</option>
+          
+        </select>
+        <label for="salarioMinimo">Salário Mínimo:</label>
+        <input type="number" id="salarioMinimo" name="salarioMinimo" step="0.01" required>
+        <label for="turno">Turno:</label>
+        <select id="turno" name="turno" required>
+          <option value="">Selecione...</option>
+          <option value="Matutino">Matutino</option>
+          <option value="Vespertino">Vespertino</option>
+          <option value="Noturno">Noturno</option>
+        </select>
+
+        <label for="avaliacao">Avaliação:</label>
+        <input type="number" id="avaliacao" name="avaliacao" step="1" min="0" max="10" required>
 
         <button type="submit" class="modal-submit">GERAR</button>
       </form>
