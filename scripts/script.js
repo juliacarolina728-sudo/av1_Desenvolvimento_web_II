@@ -112,3 +112,6 @@ Pedido mais barato: ${maisBarato.codigo} - R$ ${maisBarato.total.toFixed(2)}
 
   alert(relatorio);
 });
+
+
+
