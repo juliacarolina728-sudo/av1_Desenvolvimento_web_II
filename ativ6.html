@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
  <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <title>av1</title>
 </head>
 <body>
@@ -28,5 +24,64 @@
       <a href="ativ6.html" class="tab">Atividade 6</a>
     </nav>
   </div>
+  
+  <div class="content-card">
+  <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #1b4332; padding: 2%; font-size: 60px">Vendas e Comissões</h1><br><br>
+  <div class="placeholder-bar"></div>
+  <img class="main-image" src="imagem/vendas_comiss.png" alt="Hotel">
+
+  <div class="pedido-trigger-card" id="btnAbrirModal">
+    <div class="card-top">
+      <span class="card-action-icon"></span>
+    </div>
+    <h3 class="card-title">Vendas e Comissões</h3>
+    <p class="card-desc">Clique para gerar sua comissão.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" type="button">&times;</button>
+
+    <div class="modal-decor"></div>
+
+    <div class="modal-form-panel">
+      <h2 class="modal-title">Nova Comissão</h2>
+      <h3 class="modal-subtitle">Preencha as informações da comissão</h3>
+
+      <form class="modal-form" id="comissaoForm">
+        <label for="meta">Meta mensal vendas:</label>
+        <input type="number" id="meta" name="meta" required>
+        <label for="comissao">Porcentual base de Comissão:</label>
+        <input type="number" id="comissao" name="comissao" required>
+        <label for="codigovendedor">Código do Vendedor:</label>
+        <input type="text" id="codigovendedor" name="codigovendedor" required>
+        <label for="codigovenda">Código da Venda:</label>
+        <input type="text" id="codigovenda" name="codigovenda" required>
+        <label for="regiao">Região da Loja:</label>
+        <select id="regiao" name="regiao" required>
+          <option value="">Selecione...</option>
+          <option value="norte">Norte</option>
+          <option value="sul">Sul</option>
+          <option value="leste">Leste</option>
+          <option value="oeste">Oeste</option>
+        </select>
+        <label for="valorvenda">Valor da Venda:</label>
+        <input type="number" id="valorvenda" name="valorvenda" required>
+        <label for="tipocliente">Tipo de Cliente:</label>
+        <select id="tipocliente" name="tipocliente" required>
+          <option value="">Selecione...</option>
+          <option value="pf">Pessoa Física</option>
+          <option value="pj">Pessoa Jurídica</option>
+        </select>
+        <button type="submit" class="modal-submit">GERAR</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/script6.js"></script>
+</body>
+</html>
 </body>
 </html>
