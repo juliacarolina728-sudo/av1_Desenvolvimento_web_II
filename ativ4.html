@@ -25,7 +25,7 @@
   </div>
 
   <div class="content-card">
-  <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #7a3b2e; padding: 2%; font-size: 60px">Faça sua reserva</h1><br><br>
+  <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #7a3b2e; padding: 2%; font-size: 60px">Tarifa Dinâmica HOTEL</h1><br><br>
   <div class="placeholder-bar"></div>
   <img class="main-image" src="imagem/hotel_sign_illustration.png" alt="Hotel">
 
@@ -33,8 +33,8 @@
     <div class="card-top">
       <span class="card-action-icon"></span>
     </div>
-    <h3 class="card-title">Faça sua reserva</h3>
-    <p class="card-desc">Clique para fazer sua reserva.</p>
+    <h3 class="card-title">Tarifa Dinâmica</h3>
+    <p class="card-desc">Clique para calcular tarifa.</p>
   </div>
 </div>
 
@@ -45,22 +45,51 @@
     <div class="modal-decor"></div>
 
     <div class="modal-form-panel">
-      <h2 class="modal-title">Novo Pedido</h2>
-      <h3 class="modal-subtitle">Preencha as informações do pedido de entrega</h3>
+      <h2 class="modal-title">Reservas Dinâmicas</h2>
+      <h3 class="modal-subtitle">Preencha as informações</h3>
 
-      <form class="modal-form" id="pedidoForm">
-        <label for="nome">teste:</label>
-        <input type="text" id="nome" name="nome" required>
+      <form class="modal-form" id="hotelForm">
+        <label for="base">Informe valor base</label>
+        <input type="number" id="base" name="base" min="1" required>
+        <label for="cafe">Valor do café da manhã</label>
+        <input type="number" id="cafe" name="cafe" min="1" required>
+        
+        <label for="codigo">Informe código de reserva</label>
+        <input type="text" id="codigo" name="codigo" required>
+        <label for="quarto">Informe tipo de quarto</label>
+        <select id="quarto" name="quarto" required>
+        <option value="">Selecione quarto...</option>
+        <option value="s">Standard</option>
+        <option value="l">Luxo</option>
+        <option value="p">Premium</option> 
+        </select>
+        
+      
+        <label for="temporada">Temporada</label>
+        <select id="temporada" name="temporada" required>
+        <option value="b">Baixa</option>
+        <option value="a">Alta</option>
+        <option value="f">Feriado</option>
+        </select>
 
-        <label for="endereco">teste:</label>
-        <input type="text" id="endereco" name="endereco" required>
+        <label for="diaria">Informe quantidade diárias</label>
+        <input type="number" id="diaria" name="diaria" min="1" required>
 
-        <button type="submit" class="modal-submit">GERAR</button>
+        <label for="numero">Informe número de hospedes</label>
+        <input type="number" id="numero" name="numero" min="1" required>
+
+         <label for="manha">
+         <input type="checkbox" id="manha" name="rastreamento">
+         Café da manhã incluso?
+        </label>
+
+       <button type="button" id="btnRelatorio" class="modal-submit ">Gerar relatorio Pedido</button>
+       <button type="submit" class="modal-submit">Cadastrar Pedido</button>
       </form>
     </div>
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="scripts/script4.js"></script>
 </body>
 </html>

@@ -16,6 +16,20 @@ body {
   border-radius: 0 0 50% 50% / 0 0 70px 70px;
 }
  
+@media (max-width: 800px) {
+  .header-maroon {
+    padding: 5% 5% 10% 5%;
+  }
+  .tab {
+    font-size: 12px;
+    padding: 0.5em 0.8em;
+  }
+  .content-card {
+    max-width: 90%;
+    padding: 5%;
+  }
+  
+}
 
 .content-card {
   max-width: 75%;
@@ -203,7 +217,7 @@ body {
   position: absolute;
   width: 140px;
   height: 140px;
-  background: rgba(255,255,255,0.25);
+  background: rgba(218, 213, 213, 0.25);
   border-radius: 50%;
   bottom: -40px;
   left: 20px;
@@ -226,7 +240,7 @@ body {
 
 .modal-subtitle {
   font-size: 0.85rem;
-  color: #dddbd1;
+  color: #0c0c0a;
   margin-bottom: 24px;
 }
 
@@ -237,7 +251,7 @@ body {
 
 .modal-form label {
   font-size: 0.75rem;
-  color: #666;
+  color: #1b1919;
   margin-bottom: 6px;
   margin-top: 14px;
 }

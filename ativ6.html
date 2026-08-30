@@ -28,7 +28,7 @@
   <div class="content-card">
   <h1 style="font-family: 'Lilita One', cursive; text-align: center; margin-top: 4%; color: #1b4332; padding: 2%; font-size: 60px">Vendas e Comissões</h1><br><br>
   <div class="placeholder-bar"></div>
-  <img class="main-image" src="imagem/vendas_comiss.png" alt="Hotel">
+  <img class="main-image" src="imagem/vendas_comiss.png" alt="comissao">
 
   <div class="pedido-trigger-card" id="btnAbrirModal">
     <div class="card-top">
@@ -61,10 +61,10 @@
         <label for="regiao">Região da Loja:</label>
         <select id="regiao" name="regiao" required>
           <option value="">Selecione...</option>
-          <option value="norte">Norte</option>
-          <option value="sul">Sul</option>
-          <option value="leste">Leste</option>
-          <option value="oeste">Oeste</option>
+          <option value="1">Norte</option>
+          <option value="2">Nordeste</option>
+          <option value="3">Sudeste</option>
+          <option value="4">Sul</option>
         </select>
         <label for="valorvenda">Valor da Venda:</label>
         <input type="number" id="valorvenda" name="valorvenda" required>
@@ -74,14 +74,13 @@
           <option value="pf">Pessoa Física</option>
           <option value="pj">Pessoa Jurídica</option>
         </select>
-        <button type="submit" class="modal-submit">GERAR</button>
+        <button type="button" id="btnRelatorio" class="modal-submit ">Gerar relatorio Venda</button>
+        <button type="submit" class="modal-submit">Cadastrar Relatorio</button>
       </form>
     </div>
   </div>
 </div>
 
 <script src="scripts/script6.js"></script>
-</body>
-</html>
 </body>
 </html>
