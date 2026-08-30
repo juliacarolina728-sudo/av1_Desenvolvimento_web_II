@@ -298,4 +298,4 @@ Carga média: ${mediaA.toFixed(2)}
 
     alert(relatorio);
 
-});
+}); 
