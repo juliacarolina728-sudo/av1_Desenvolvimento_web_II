@@ -1,7 +1,7 @@
 # AV 1 Desenvolvimento web II
 ## Atividade Avaliativa Individual 01
 
-[Clique aqui](https://juliacarolina728-sudo.github.io/av1_Desenvolvimento_web_II/ativ6.html) para acessar o site.
+[Clique aqui](https://juliacarolina728-sudo.github.io/av1_Desenvolvimento_web_II/index.html) para acessar o site.
 
 Lista de Exercícios (HTML + CSS + JavaScript) 
 
