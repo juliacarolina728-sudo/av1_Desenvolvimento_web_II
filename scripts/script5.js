@@ -16,8 +16,8 @@ document.getElementById("esporteForm").addEventListener("submit", (e) => {
 
 
     const cargaMaxima = parseFloat(document.getElementById("pontos").value);
-const codigo = document.getElementById("codigo").value;
-const jogador = document.getElementById("nome").value;
+    const codigo = document.getElementById("codigo").value;
+    const jogador = document.getElementById("nome").value;
     const posicao = document.getElementById("posicao").value;
     const tipo = document.getElementById("tipo").value;
     const duracao = parseInt(document.getElementById("duracao").value);
